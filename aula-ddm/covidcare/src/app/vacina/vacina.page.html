@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" href="/inicio">
+        <ion-icon slot="icon-only" name="chevron-back-outline">Voltar</ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Vacinas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar></ion-searchbar>
+  <ion-list>
+    <ion-item> 
+      <ion-button id="auto-trigger" size="large" expand="block">Covid</ion-button>
+      <ion-popover trigger="auto-trigger" size="auto">
+        <ng-template>
+        <ion-content class="ion-padding">As vacinas atuam na prevenção, induzindo a criação de anticorpos por parte do sistema imunológico. Reduzem a possibilidade de infecção, porém caso a infecção ocorra, a vacina evitará sua evolução para quadros mais graves e principalmente a morte. É importante saber que há uma demora de alguns dias para esta resposta do organismo. Assim, nos primeiros dias após a vacinação, pode ocorrer tanto a manifestação de uma infecção que pode ter ocorrido alguns dias antes, como também é possível se infectar e transmitir a doença antes que comece a produção de anticorpos. Por isso é fundamental manter as medidas de prevenção e higiene.  No caso da vacina contra a Covid-19, é importante saber que para ser imunizado é necessário tomar as duas doses da vacina.  A segunda dose deve ser aplicada num intervalo de 14 a 28 dias em relação à primeira dose, no caso da Coronavac (Sinovac/Butantan) e de 90 dias no caso da Covishield (Astra Zeneca / Fiocruz).</ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-item>
+
+    <ion-item>
+      <ion-button id="cover-trigger" size="large" expand="block">Gripe</ion-button>
+      <ion-popover trigger="cover-trigger" size="auto">
+        <ng-template>
+          <ion-content class="ion-padding">A prevenção da gripe é feita pela vacinação e por ações preventivas diárias como: lavar as mãos, principalmente antes das refeições; cobrir o nariz e a boca ao espirrar ou tossir; não compartilhar itens de uso pessoal, como copos e talheres; e manter os ambientes ventilados.</ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-item>
+  </ion-list>
+</ion-content>

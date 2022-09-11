@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" href="/menu-carteirinha">
+        <ion-icon slot="icon-only" name="chevron-back-outline">Voltar</ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Carteinha</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+
+<ion-content>
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="email" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirme a sua senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-list>
+            <ion-item>
+              <ion-select placeholder="Sexo">
+                <ion-select-option value="Feminino">Feminino</ion-select-option>
+                <ion-select-option value="Masculino">Gripe</ion-select-option>
+                <ion-select-option value="Não Identificado">Não Identificado</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item>
+
+        <ion-item>
+          <ion-list>
+            <ion-item>
+              <ion-select placeholder="Vacinas" [multiple]="true">
+                <ion-select-option value="Covid">Covid</ion-select-option>
+                <ion-select-option value="Gripe">Gripe</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item>
+        <br>
+        <ion-button size="full" href="/menu-carteirinha">SALVAR</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+
+</ion-content>

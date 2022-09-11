@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" href="/inicio">
+        <ion-icon slot="icon-only" name="chevron-back-outline">Voltar</ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Minhas Carteirinhas</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+  <div class="flex-center" id="container">
+  <ion-card>  
+    
+    <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button href="/cadastrar-carteirinha" size="large" expand="block">
+            <ion-icon name="add-outline"></ion-icon>
+            Nova Carteirinha
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button href="/carteirinha" size="large" expand="block">
+            <ion-icon name="journal"></ion-icon>
+            Carteirinha
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-card-content>   
+  </ion-card>
+ 
+  </div>

@@ -1,0 +1,7 @@
+{
+  "name": "covidcare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

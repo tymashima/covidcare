@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" href="/home">
+        <ion-icon slot="icon-only" name="chevron-back-outline">Voltar</ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Criar conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Criar conta</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="email" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirme a sua senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        
+        <ion-list> 
+          <ion-radio-group>
+            <ion-list-header>
+              <ion-label>Sexo</ion-label>
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>Feminino</ion-label>
+              <ion-radio slot="start" value="feminino"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Masculino</ion-label>
+              <ion-radio slot="start" value="masculino"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Não identificar</ion-label>
+              <ion-radio slot="start" value="nao-identificado"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+        <br>
+        <ion-button size="full" href="/inicio">REGISTRAR</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+
+</ion-content>
